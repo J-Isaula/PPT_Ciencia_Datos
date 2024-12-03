@@ -12,9 +12,24 @@ format:
     incremental: false
     title-slide-attributes:
       data-background-image: img/penguin-highway.jpg
-      data-background-size: cover  
+      data-background-size: cover 
 editor: visual
 ---
+
+```{r}
+#| label: setup
+#| include: false
+
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 7,
+  fig.height = 5,
+  fig.align = "center"
+)
+
+```
 
 ## Historia de la IA
 
