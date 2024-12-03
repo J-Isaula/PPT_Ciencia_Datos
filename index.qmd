@@ -34,7 +34,7 @@ knitr::opts_chunk$set(
 ## Historia de la IA
 
 ::::: columns
-::: column
+::: {.column style="font-size:28px"}
 Al empezar con la programación de ordenadores mediante algoritmos, en 1950 Alan Turin propone el `test de Turing,` el cual propone que si no puedes diferenciar entre conversar con un humano y una maquina, entonces, nos encontramos ante un nuevo concepto, algo interesante para su época.
 :::
 
@@ -46,7 +46,7 @@ Al empezar con la programación de ordenadores mediante algoritmos, en 1950 Alan
 ## Historia de la IA
 
 ::::: columns
-::: column
+::: {.column style="font-size:28px"}
 -   Ante esto, McCarty en 1956 acuña el término `Inteligencia Artificial` por primera vez en la historia.
 
 -   Al siguiente año, Rosenblat desarrolla Eliza, la primera red neuronal para un chatbot.
@@ -60,7 +60,7 @@ Al empezar con la programación de ordenadores mediante algoritmos, en 1950 Alan
 ## Historia de la IA
 
 ::::: columns
-::: column
+::: {.column style="font-size:25px"}
 -   En 1996 Minsky crea el concepto de perceptrones, la arquitectura básica empleada a día de hoy en redes neuronales, aunque debido a la limitación computacional de la época y que necesitaban muchos datos, su concepto queda en archivo, empezando un `inverno en la IA.`
 
 -   En 1996 la IA renace gracias a Deep Blue, venciendo al campeón mundial humano de ajedrez.
@@ -74,7 +74,7 @@ Al empezar con la programación de ordenadores mediante algoritmos, en 1950 Alan
 ## Historia de la IA
 
 ::::: columns
-::: column
+::: {.column style="font-size:25px"}
 -   En 2012, Google construyo un superordenador que aprende a reconocer caras de gatos y humanos y se empezo a popularizar `AlexNet` con resultados satisfactorios.
 
 -   En 2014 por primera vez una IA supera el test de Turing, y Goodfellow crea el concepto de `GAN,` la primera IA que crea imágenes por si misma.
@@ -90,7 +90,7 @@ Al empezar con la programación de ordenadores mediante algoritmos, en 1950 Alan
 ## Historia de la IA
 
 ::::: columns
-::: column
+::: {.column style="font-size:25px"}
 -   En 2017 Google crea una arquitectura que reduce la capacidad de memoria necesaria y aumenta el rendimiento de los modelos de redes neuronales, creando el concepto de `atention.`
 -   En 2020 se crea la IA `Stable Diffusion,` revoluicionaria de los GAN, que permite crear imagenes con texto.
 -   En 2022 OpenAI pone al público el uso de ChatGPT, NVIDIA pone a la venta tarjetas gráficas súper potentes, empiezan a dar popularidad a las aplicaciones independientes de IA, etc...
@@ -101,10 +101,10 @@ Al empezar con la programación de ordenadores mediante algoritmos, en 1950 Alan
 :::
 :::::
 
-## Qué `no` es IA?
+## Qué no es IA?
 
 :::: columns
-::: column
+::: {.column style="font-size:25px"}
 -   Calculadoras
 
 -   Software o lenguages de programación
@@ -121,10 +121,10 @@ Al empezar con la programación de ordenadores mediante algoritmos, en 1950 Alan
 :::
 ::::
 
-## Qué `si` es IA?
+## Qué si es IA?
 
 :::: columns
-::: column
+::: {.column style="font-size:25px"}
 -   Chatbot autónomo.
 -   Voz a texto (y viceversa).
 -   Asistentes virtuales (Alex, Siri, etc.)
@@ -138,7 +138,7 @@ Al empezar con la programación de ordenadores mediante algoritmos, en 1950 Alan
 ## Investigación en IA
 
 ::::: columns
-::: column
+::: {.column style="font-size:25px"}
 -   **Descubrimiento:** entrenar un modelo nunca antes entrenado.
 -   **Teórica:** algortimos, mejoras en rendimiento.
 -   **Aplicada:** despliegues para terceros.
@@ -152,7 +152,7 @@ Al empezar con la programación de ordenadores mediante algoritmos, en 1950 Alan
 ## Complicaciones en IA
 
 ::::: columns
-::: column
+::: {.column style="font-size:25px"}
 -   Recolección de datos.
 
 -   Etiquetado de datos.
@@ -183,19 +183,17 @@ Al empezar con la programación de ordenadores mediante algoritmos, en 1950 Alan
 
 ## Etapas para el procesamiento de datos
 
-:::::: columns
-::: column
+:::::::: {.columns style="font-size:15px"}
+::: {.column style="font-size:15px"}
 **`OBTENER DATOS`**
 
 Transformar de otros programas o lenguajes
 
 Descargar de la web (web scraping)
-
-![](img/obtener.png)
 :::
 
-:::: columns
-::: column
+:::: {.columns style="font-size:15px"}
+::: {.column style="font-size:15px"}
 **`PROCESAR DATOS`**
 
 Ordenar lo obtenido
@@ -203,16 +201,10 @@ Ordenar lo obtenido
 Dar el formato requerido
 
 Limpiar impurezas de las bases
-
-![](img/procesar.png)
 :::
 ::::
-::::::
 
-## Etapas para el procesamiento de datos
-
-::::: columns
-::: column
+::: {.column style="font-size:15px"}
 **`ANALIZAR DATOS`**
 
 Data Mining
@@ -222,23 +214,19 @@ Econometría
 Machine Learning
 
 Deep Learning
-
-![](img/analizar.png)
 :::
 
-::: column
+::: {.column style="font-size:15px"}
 **`REPORTAR DATOS`**
 
 Crear reportes con gráficos en una tabla en Exce, word o un dasboard.
-
-![](img/reportar.png)
 :::
-:::::
+::::::::
 
 ## Aprendizaje Autómatico (Machine Learning)
 
 ::::: columns
-::: column
+::: {.column style="font-size:25px"}
 -   Conjunto de técnicas que se emplean para crear IA.
 
 -   Se clasifica en aprendizaje supervisado y no supervisado.
@@ -256,7 +244,7 @@ Crear reportes con gráficos en una tabla en Exce, word o un dasboard.
 ## Minería de datos
 
 ::::: columns
-::: column
+::: {.column style="font-size:30px"}
 -   Este término muchas veces lo confunden con machine learning y ciencia de datos.
 
 -   Se refiere a la obtención de nuevo conocimiento práctico gracias a los datos.
@@ -272,7 +260,7 @@ Crear reportes con gráficos en una tabla en Exce, word o un dasboard.
 ## Ciencia de datos
 
 ::::: columns
-::: column
+::: {.column style="font-size:25px"}
 -   Es la aplicación específicada de IA a un campo de estudio, con el fin de aplicar teoría o conocimiento a la IA, para que no sea tan `"no explicada".`
 
 -   Normalmente se confunde con decirle IA más a una profesión específicada como medicina, marketing o telecomunicaciones, pero, esto aplica a cualquier carrera.
@@ -288,7 +276,7 @@ Crear reportes con gráficos en una tabla en Exce, word o un dasboard.
 ## Requisitos computacionales mínimos para machine learning
 
 :::: columns
-::: column
+::: {.column style="font-size:25px"}
 8 GB de RAM
 
 256 GB de SSD
@@ -304,13 +292,13 @@ Procesador Core i5
 ## Con qué hacer IA / Ciencia de datos
 
 ::::: columns
-::: column
+::: {.column style="font-size:25px"}
 -   Con cualquier lenguaje de programación es posible, pero, principalmente se usan: `Python`, `Java`, `C++`, `Julia` y `Rubí.`
 -   Como un lenguaje de programación no tiene interfaz pre definida, se pueden instalar varias como `Spyder` o `Jupyter Notebooks`.
 -   Como la IA son modelos matemáticos complejos, se puede emplear alternativamente Python en la nube de forma gratuita como `Google Colab` o `Kaggle.`
 :::
 
-::: column
+::: {.column style="font-size:25px"}
 -   Finalmente, si los recursos gratuitos no cubren tu demanda, puedes comprar máquinas potentes o pagar por su alquiler en la nube como `Google Cloud`, `AWS`, `Azure`, etc.
 :::
 :::::
@@ -318,8 +306,8 @@ Procesador Core i5
 ## Recuerden
 
 :::: columns
-::: column
--   un modelo no siempre será el mejor al inicio, pero, para eso está la mejora continua.
+::: {.column style="font-size:25px"}
+-   Un modelo no siempre será el mejor al inicio, pero, para eso está la mejora continua.
 
 -   Sean creativos al crear modelos.
 
@@ -332,7 +320,7 @@ Procesador Core i5
 ## Preparación y algoritmo para un buen modelo
 
 :::: columns
-::: column
+::: {.column style="font-size:25px"}
 -   A la variable por predecir $Y$ se le conoce como: dependiente, label, explicada, de interés, output.
 
 -   A la o las variables para predecir se le puede decir: independiente $(X)$, features, características, input.
