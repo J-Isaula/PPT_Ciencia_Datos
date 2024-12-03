@@ -1,0 +1,397 @@
+---
+title: "Ciencia de Datos 🐧"
+output-dir: docs
+author:
+  - Lic. Juan Isaula
+format: 
+  revealjs:
+    multiplex: true
+    footer: "[https://j-isaula.github.io/website_ji/](https://j-isaula.github.io/website_ji/)"
+    theme: ["pp.scss"]
+    slide-number: c/t
+    incremental: false
+    title-slide-attributes:
+      data-background-image: img/penguin-highway.jpg
+      data-background-size: cover  
+editor: visual
+---
+
+## Historia de la IA
+
+::::: columns
+::: column
+Al empezar con la programación de ordenadores mediante algoritmos, en 1950 Alan Turin propone el `test de Turing,` el cual propone que si no puedes diferenciar entre conversar con un humano y una maquina, entonces, nos encontramos ante un nuevo concepto, algo interesante para su época.
+:::
+
+::: column
+![](img/Test_Turing.png)
+:::
+:::::
+
+## Historia de la IA
+
+::::: columns
+::: column
+-   Ante esto, McCarty en 1956 acuña el término `Inteligencia Artificial` por primera vez en la historia.
+
+-   Al siguiente año, Rosenblat desarrolla Eliza, la primera red neuronal para un chatbot.
+:::
+
+::: column
+![](img/ELIZA.png)
+:::
+:::::
+
+## Historia de la IA
+
+::::: columns
+::: column
+-   En 1996 Minsky crea el concepto de perceptrones, la arquitectura básica empleada a día de hoy en redes neuronales, aunque debido a la limitación computacional de la época y que necesitaban muchos datos, su concepto queda en archivo, empezando un `inverno en la IA.`
+
+-   En 1996 la IA renace gracias a Deep Blue, venciendo al campeón mundial humano de ajedrez.
+:::
+
+::: column
+![](img/Ajedrez.png)
+:::
+:::::
+
+## Historia de la IA
+
+::::: columns
+::: column
+-   En 2012, Google construyo un superordenador que aprende a reconocer caras de gatos y humanos y se empezo a popularizar `AlexNet` con resultados satisfactorios.
+
+-   En 2014 por primera vez una IA supera el test de Turing, y Goodfellow crea el concepto de `GAN,` la primera IA que crea imágenes por si misma.
+
+-   En 2015 se supera al campeón mundial humano de `Go`, un juego muy complicado.
+:::
+
+::: column
+![](img/caras.png)
+:::
+:::::
+
+## Historia de la IA
+
+::::: columns
+::: column
+-   En 2017 Google crea una arquitectura que reduce la capacidad de memoria necesaria y aumenta el rendimiento de los modelos de redes neuronales, creando el concepto de `atention.`
+-   En 2020 se crea la IA `Stable Diffusion,` revoluicionaria de los GAN, que permite crear imagenes con texto.
+-   En 2022 OpenAI pone al público el uso de ChatGPT, NVIDIA pone a la venta tarjetas gráficas súper potentes, empiezan a dar popularidad a las aplicaciones independientes de IA, etc...
+:::
+
+::: column
+![](img/chatgpt.png)
+:::
+:::::
+
+## Qué `no` es IA?
+
+:::: columns
+::: column
+-   Calculadoras
+
+-   Software o lenguages de programación
+
+-   Programación de Reglas Específicas
+
+-   Sensores
+
+-   Reconocer una figura geométrica en imagenes.
+
+-   Códigos QR
+
+`Nota: pero pueden tener IA`
+:::
+::::
+
+## Qué `si` es IA?
+
+:::: columns
+::: column
+-   Chatbot autónomo.
+-   Voz a texto (y viceversa).
+-   Asistentes virtuales (Alex, Siri, etc.)
+-   Cualquier generador automático.(música, imágenes, resúmenes, etc...)
+-   Navegador inteligente, traductor.
+
+`Nota: existen ocasiones en que una tarea parece sencilla, pero, tiene un modelo súper complejo detras de lo que la hace sencilla.`
+:::
+::::
+
+## Investigación en IA
+
+::::: columns
+::: column
+-   **Descubrimiento:** entrenar un modelo nunca antes entrenado.
+-   **Teórica:** algortimos, mejoras en rendimiento.
+-   **Aplicada:** despliegues para terceros.
+:::
+
+::: column
+![](img/Imagen%201.png)
+:::
+:::::
+
+## Complicaciones en IA
+
+::::: columns
+::: column
+-   Recolección de datos.
+
+-   Etiquetado de datos.
+
+-   Sesgos (calidad de los datos: racismo, machismo, preferencias especificas, corrupción).
+
+-   Ética (protección de datos, usos finales, externalidades dependen de IAs).
+
+-   Velocidad de entrenamiento.
+
+-   Velocidad de respuesta.
+
+-   Explicabilidad.
+:::
+
+::: column
+![](img/complicaciones.png)
+:::
+:::::
+
+## Otros conceptos
+
+:::: columns
+::: column
+![](img/otros.png)
+:::
+::::
+
+## Etapas para el procesamiento de datos
+
+:::::: columns
+::: column
+**`OBTENER DATOS`**
+
+Transformar de otros programas o lenguajes
+
+Descargar de la web (web scraping)
+
+![](img/obtener.png)
+:::
+
+:::: columns
+::: column
+**`PROCESAR DATOS`**
+
+Ordenar lo obtenido
+
+Dar el formato requerido
+
+Limpiar impurezas de las bases
+
+![](img/procesar.png)
+:::
+::::
+::::::
+
+## Etapas para el procesamiento de datos
+
+::::: columns
+::: column
+**`ANALIZAR DATOS`**
+
+Data Mining
+
+Econometría
+
+Machine Learning
+
+Deep Learning
+
+![](img/analizar.png)
+:::
+
+::: column
+**`REPORTAR DATOS`**
+
+Crear reportes con gráficos en una tabla en Exce, word o un dasboard.
+
+![](img/reportar.png)
+:::
+:::::
+
+## Aprendizaje Autómatico (Machine Learning)
+
+::::: columns
+::: column
+-   Conjunto de técnicas que se emplean para crear IA.
+
+-   Se clasifica en aprendizaje supervisado y no supervisado.
+
+-   El supervisado se divide en: continuo, conteo, binario, multi clase, multi label
+
+-   Su fin es predecir algo.
+:::
+
+::: column
+![](img/ml.png)
+:::
+:::::
+
+## Minería de datos
+
+::::: columns
+::: column
+-   Este término muchas veces lo confunden con machine learning y ciencia de datos.
+
+-   Se refiere a la obtención de nuevo conocimiento práctico gracias a los datos.
+
+-   Su fin es explicar el por qué de algo.
+:::
+
+::: column
+![](img/mineria.png)
+:::
+:::::
+
+## Ciencia de datos
+
+::::: columns
+::: column
+-   Es la aplicación específicada de IA a un campo de estudio, con el fin de aplicar teoría o conocimiento a la IA, para que no sea tan `"no explicada".`
+
+-   Normalmente se confunde con decirle IA más a una profesión específicada como medicina, marketing o telecomunicaciones, pero, esto aplica a cualquier carrera.
+
+-   Su fin es aplicar el conocimiento para mejorar la predicción o el porqué de algo.
+:::
+
+::: column
+![](img/cienciadatos.png)
+:::
+:::::
+
+## Requisitos computacionales mínimos para machine learning
+
+:::: columns
+::: column
+8 GB de RAM
+
+256 GB de SSD
+
+4 núcleos de procesamiento
+
+Procesador Core i5
+
+4 GB dedicados de GPU
+:::
+::::
+
+## Con qué hacer IA / Ciencia de datos
+
+::::: columns
+::: column
+-   Con cualquier lenguaje de programación es posible, pero, principalmente se usan: `Python`, `Java`, `C++`, `Julia` y `Rubí.`
+-   Como un lenguaje de programación no tiene interfaz pre definida, se pueden instalar varias como `Spyder` o `Jupyter Notebooks`.
+-   Como la IA son modelos matemáticos complejos, se puede emplear alternativamente Python en la nube de forma gratuita como `Google Colab` o `Kaggle.`
+:::
+
+::: column
+-   Finalmente, si los recursos gratuitos no cubren tu demanda, puedes comprar máquinas potentes o pagar por su alquiler en la nube como `Google Cloud`, `AWS`, `Azure`, etc.
+:::
+:::::
+
+## Recuerden
+
+:::: columns
+::: column
+-   un modelo no siempre será el mejor al inicio, pero, para eso está la mejora continua.
+
+-   Sean creativos al crear modelos.
+
+-   Cualquier problema es aplicable.
+
+-   Nunca descarten emplear modelos qua ya existen, así como nunca descarten hacer sus propios modelos.
+:::
+::::
+
+## Preparación y algoritmo para un buen modelo
+
+:::: columns
+::: column
+-   A la variable por predecir $Y$ se le conoce como: dependiente, label, explicada, de interés, output.
+
+-   A la o las variables para predecir se le puede decir: independiente $(X)$, features, características, input.
+
+-   Dataset: base de datos.
+:::
+::::
+
+## Tipos de investigación
+
+:::::: columns
+::: {.column style="font-size: 20px"}
+**`Machine Learning`**
+
+-   Busca predecir.
+
+-   Usa muchas variables para explorar.
+
+-   No es necesariamente explicable.
+
+-   El producto es un modelo que genere outputs precisos.
+:::
+
+::: {.column style="font-size: 20px"}
+**`Ciencia de Datos`**
+
+-   Busca explicar y predecir.
+
+-   Usa variables teóricas y a veces adicionales.
+
+-   Siempre busca explicar.
+
+-   El producto es un modelo que tenga equilibrio entre lo que genera y lo que explica.
+:::
+
+::: {.column style="font-size: 20px"}
+**`Minería de datos`**
+
+-   Busca explicar y predecir.
+
+-   Usa variables teóricas y a veces adicionales.
+
+-   Siempre busca explicar.
+
+-   El producto es un modelo que tenga equilibrio entre lo que genera y lo que explica.
+:::
+::::::
+
+## Recolección de Dataset
+
+::: {.columns style="font-size:20px"}
+tener una idea de investigación es el primer paso:
+
+-   Puedo predecir si el precio de una acción subirá mañana ?
+
+-   Puedo predecir si alguien me ama en base a nuestro chat?
+
+-   Puedo crear un modelo para detectar armas en una foto?
+
+`Pero`, sin un dataset nuestra idea nunca se podrá producir.
+
+![](img/dataset.png){width="252"}
+:::
+
+## Datos sin sesgo
+
+::: {.columns style="font-size:20px"}
+-   Un buen modelo depende de un buen dataset.
+
+-   El modelo aprende lo que le enseñamos, si le enseñamos mal...
+
+-   Debemos diferenciar entre patron y sesgo.
+
+-   Ejemplos: enseñar brechas de género, especificaciones de raza a una carrera, etc.
+
+![](img/sesgo.png){width="382"}
+:::
