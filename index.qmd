@@ -359,13 +359,13 @@ Procesador Core i5
 ::: {.column style="font-size: 20px"}
 **`Minería de datos`**
 
--   Busca explicar y predecir.
+-   Busca explicar.
 
--   Usa variables teóricas y a veces adicionales.
+-   Usa muchas variables parz explorar.
 
--   Siempre busca explicar.
+-   Necesariamente explicable.
 
--   El producto es un modelo que tenga equilibrio entre lo que genera y lo que explica.
+-   El producto es un modelo que explique comportamientos.
 :::
 ::::::
 
