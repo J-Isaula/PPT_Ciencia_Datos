@@ -398,3 +398,127 @@ tener una idea de investigación es el primer paso:
 
 ![](img/sesgo.png){width="382"}
 :::
+
+## Etiquetas Correctas
+
+::: {.columns style="font-size:20px"}
+-   Existen estudios con una label sencilla, como etiquetar si una imagen es un gato o un perro, a que precio se vendió una casa.
+
+-   Otros no lo son tan directos y puede ser hasta subjetivo, como etiquetar si un correo es spam, si un texto es ofensivo, si un registro es una anomalía....
+
+-   Importante considerar si necesitarás un experto en la materia o no para esta labor.
+
+![](img/label.png){width="382"}
+:::
+
+## Estimación de Modelos
+
+::: {.columns style="font-size:20px"}
+-   A partir de aquí si depende de nuestras habilidades.
+
+-   **Verificar que no hayan missings y estandarizar variables.**
+
+-   **TODOS** los modelos persiguen lo mismo, lo que se cambia es la forma de conseguirlo, pero, todos siguen lo siguiente:\
+    $$Y_i = f(X_i)$$
+
+-   Lo que cambia es $f(X_i)$ o la forma que lo consideramos
+
+-   Entonces, probaremos varios modelos hasta encontrar un `ganador`.
+
+-   El ganador se decide en base a `métricas` que dependen de la variable dependiente y nuestro objetivo particular
+:::
+
+## Delimitando nuestra data
+
+::: {.columns style="font-size:20px"}
+-   Entrenamiento (`Train`): parte de mi data que me sirve para estimar el modelo.
+
+-   Prueba (`test`): parte de mi data que sirve para validar el modelo.
+
+-   Nueva data (`Wild`): la data que falta no tiene label y por ende debo predecir, y no sabré los resultados hasta que llegue el día de presentarse dicho escenario.
+
+-   Frecuentemente se usa `Split`:\
+
+    | **Tus datos (Conozco** $Y$**)** | **No tus datos (No conozco** $Y$**)** |
+    |------------------------------------|------------------------------------|
+    | Train (estimar modelo) \| Test (probar modelo) | Wild (probar modelo) |
+    | Eficiencia conocida \| Eficiencia conocida | Eficiencia Desconocida |
+:::
+
+## Ajustes en Modelos
+
+::: {.columns style="font-size:20px"}
+-   **Underfitting** (`subajuste)`: no entrené lo suficiente al modelo.
+
+-   **Overfitting** (`sobreajuste`): entrené demasiado al modelo y no hay posibilidad a nuevos casos.
+
+-   **Balanced** (`balanceado`): entrené lo suficiente al modelo y predice bien nueva data.
+
+![](img/ajuste.png)
+:::
+
+## Consideraciones
+
+::: {.columns style="font-size:20px"}
+-   Lo anterior es como escoger un modelo, pero, recordar que tendrán un resultado diferente si varían en:\
+    -   La muestra (split)\
+    -   Las features\
+    -   Las transformaciones de features\
+    -   Los hiperparámetros por calibrar
+-   Aquí viene lo importante que es **`automatizar al programar`**.
+:::
+
+## Luego que gana un modelo?
+
+::: {.columns style="font-size:20px"}
+-   Se debe **`guardar los parámetros`** en el formato que consideren, normalmente se usa `.pkl` para modelos con datos estructurados.
+
+-   Luego de guardar, lo puedes pasar a un sistema o pagina web para que cuando alguién más llene l**`os mismos inputs le retorne un output`**, y luego toca esperar que sea una buena predicción.
+
+-   Recordar que la ganancia es que todo esto es automático y **`para grandes cantidades de datos`**.
+
+-   También pueden venderlo.
+:::
+
+## Qué más continuaras viendo aquí?
+
+::: {.columns style="font-size:20px"}
+-   A partir de aquí sigue estudiar **`los tipos de variables dependientes.`**
+-   Cada modelo, ventajas y desventajas.
+-   Estudiar las métricas pertinentes.
+-   Aprender los tipos de calibración.
+-   Salir de los datos estructurados ( un Excel por así decirlo) e ir a textos, sonidos e imágenes y volver a los primeros 4 puntos.
+-   Luego de lo anterior, aprender sobre **`modelos más complejos (Deep Learning)`** y repetir el punto 5.
+:::
+
+## Empezaremos a ciegas con...
+
+::: {.columns style="font-size:20px"}
+-   Se realizará tanto en local como Google Colab.
+-   Un poco de estadística descriptiva.
+-   Problema de aprendizaje supervisado con variable explicada continua.
+-   Modelo de regresión lineal, support vector machine y árbol de decisión.
+-   Métrica de $R^2$ y $MSE$
+-   Guardar y probar modelo.
+:::
+
+## Procesos
+
+::: {.columns style="font-size:20px"}
+-   Importar librerías.
+-   Cargar datos: `pd.read_excel()`
+-   Limpiar....
+-   Separar base: `train_test_split()`
+-   Estimar modelo: model = `modelo().fit(x_train, y_train)`
+-   Predecir: y_pred_test = `model.predict(X_test)`
+-   Scores: `model.score(X_train, y_test) | mse(y_test, y_pred_test)`
+:::
+
+## Consideraciones al pasar a Colab
+
+::: {.columns style="font-size:20px"}
+-   Recuerden subir su archivo cada vez que inician sesión o tenerlo en Google Drive.
+-   Borrar os.chdir() porque **no es su computadora**.
+-   Colocar **`!pip install paquete`** si les genera error por falta de paquete.
+-   Listo!
+:::

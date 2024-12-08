@@ -624,6 +624,155 @@ Lic. Juan Isaula
 <li><p>Ejemplos: enseñar brechas de género, especificaciones de raza a una carrera, etc.</p></li>
 </ul><p><img data-src="img/sesgo.png" width="382"></p>
 </div>
+</section>
+<section id="etiquetas-correctas" class="slide level2">
+<h2>Etiquetas Correctas</h2>
+<div class="columns" style="font-size:20px">
+<ul>
+<li><p>Existen estudios con una label sencilla, como etiquetar si una imagen es un gato o un perro, a que precio se vendió una casa.</p></li>
+<li><p>Otros no lo son tan directos y puede ser hasta subjetivo, como etiquetar si un correo es spam, si un texto es ofensivo, si un registro es una anomalía….</p></li>
+<li><p>Importante considerar si necesitarás un experto en la materia o no para esta labor.</p></li>
+</ul><p><img data-src="img/label.png" width="382"></p>
+</div>
+</section>
+<section id="estimación-de-modelos" class="slide level2">
+<h2>Estimación de Modelos</h2>
+<div class="columns" style="font-size:20px">
+<ul>
+<li><p>A partir de aquí si depende de nuestras habilidades.</p></li>
+<li><p><strong>Verificar que no hayan missings y estandarizar variables.</strong></p></li>
+<li><p><strong>TODOS</strong> los modelos persiguen lo mismo, lo que se cambia es la forma de conseguirlo, pero, todos siguen lo siguiente:<br>
+<span class="math display">\[Y_i = f(X_i)\]</span></p></li>
+<li><p>Lo que cambia es <span class="math inline">\(f(X_i)\)</span> o la forma que lo consideramos</p></li>
+<li><p>Entonces, probaremos varios modelos hasta encontrar un <code>ganador</code>.</p></li>
+<li><p>El ganador se decide en base a <code>métricas</code> que dependen de la variable dependiente y nuestro objetivo particular</p></li>
+</ul>
+</div>
+</section>
+<section id="delimitando-nuestra-data" class="slide level2">
+<h2>Delimitando nuestra data</h2>
+<div class="columns" style="font-size:20px">
+<ul>
+<li><p>Entrenamiento (<code>Train</code>): parte de mi data que me sirve para estimar el modelo.</p></li>
+<li><p>Prueba (<code>test</code>): parte de mi data que sirve para validar el modelo.</p></li>
+<li><p>Nueva data (<code>Wild</code>): la data que falta no tiene label y por ende debo predecir, y no sabré los resultados hasta que llegue el día de presentarse dicho escenario.</p></li>
+<li><p>Frecuentemente se usa <code>Split</code>:<br>
+</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Tus datos (Conozco</strong> <span class="math inline">\(Y\)</span><strong>)</strong></th>
+<th><strong>No tus datos (No conozco</strong> <span class="math inline">\(Y\)</span><strong>)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Train (estimar modelo) | Test (probar modelo)</td>
+<td>Wild (probar modelo)</td>
+</tr>
+<tr class="even">
+<td>Eficiencia conocida | Eficiencia conocida</td>
+<td>Eficiencia Desconocida</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</div>
+</section>
+<section id="ajustes-en-modelos" class="slide level2">
+<h2>Ajustes en Modelos</h2>
+<div class="columns" style="font-size:20px">
+<ul>
+<li><p><strong>Underfitting</strong> (<code>subajuste)</code>: no entrené lo suficiente al modelo.</p></li>
+<li><p><strong>Overfitting</strong> (<code>sobreajuste</code>): entrené demasiado al modelo y no hay posibilidad a nuevos casos.</p></li>
+<li><p><strong>Balanced</strong> (<code>balanceado</code>): entrené lo suficiente al modelo y predice bien nueva data.</p></li>
+</ul><p><img data-src="img/ajuste.png"></p>
+</div>
+</section>
+<section id="consideraciones" class="slide level2">
+<h2>Consideraciones</h2>
+<div class="columns" style="font-size:20px">
+<ul>
+<li>Lo anterior es como escoger un modelo, pero, recordar que tendrán un resultado diferente si varían en:<br>
+
+<ul>
+<li>La muestra (split)<br>
+</li>
+<li>Las features<br>
+</li>
+<li>Las transformaciones de features<br>
+</li>
+<li>Los hiperparámetros por calibrar</li>
+</ul></li>
+<li>Aquí viene lo importante que es <strong><code>automatizar al programar</code></strong>.</li>
+</ul>
+</div>
+</section>
+<section id="luego-que-gana-un-modelo" class="slide level2">
+<h2>Luego que gana un modelo?</h2>
+<div class="columns" style="font-size:20px">
+<ul>
+<li><p>Se debe <strong><code>guardar los parámetros</code></strong> en el formato que consideren, normalmente se usa <code>.pkl</code> para modelos con datos estructurados.</p></li>
+<li><p>Luego de guardar, lo puedes pasar a un sistema o pagina web para que cuando alguién más llene l<strong><code>os mismos inputs le retorne un output</code></strong>, y luego toca esperar que sea una buena predicción.</p></li>
+<li><p>Recordar que la ganancia es que todo esto es automático y <strong><code>para grandes cantidades de datos</code></strong>.</p></li>
+<li><p>También pueden venderlo.</p></li>
+</ul>
+</div>
+</section>
+<section id="qué-más-continuaras-viendo-aquí" class="slide level2">
+<h2>Qué más continuaras viendo aquí?</h2>
+<div class="columns" style="font-size:20px">
+<ul>
+<li>A partir de aquí sigue estudiar <strong><code>los tipos de variables dependientes.</code></strong></li>
+<li>Cada modelo, ventajas y desventajas.</li>
+<li>Estudiar las métricas pertinentes.</li>
+<li>Aprender los tipos de calibración.</li>
+<li>Salir de los datos estructurados ( un Excel por así decirlo) e ir a textos, sonidos e imágenes y volver a los primeros 4 puntos.</li>
+<li>Luego de lo anterior, aprender sobre <strong><code>modelos más complejos (Deep Learning)</code></strong> y repetir el punto 5.</li>
+</ul>
+</div>
+</section>
+<section id="empezaremos-a-ciegas-con" class="slide level2">
+<h2>Empezaremos a ciegas con…</h2>
+<div class="columns" style="font-size:20px">
+<ul>
+<li>Se realizará tanto en local como Google Colab.</li>
+<li>Un poco de estadística descriptiva.</li>
+<li>Problema de aprendizaje supervisado con variable explicada continua.</li>
+<li>Modelo de regresión lineal, support vector machine y árbol de decisión.</li>
+<li>Métrica de <span class="math inline">\(R^2\)</span> y <span class="math inline">\(MSE\)</span></li>
+<li>Guardar y probar modelo.</li>
+</ul>
+</div>
+</section>
+<section id="procesos" class="slide level2">
+<h2>Procesos</h2>
+<div class="columns" style="font-size:20px">
+<ul>
+<li>Importar librerías.</li>
+<li>Cargar datos: <code>pd.read_excel()</code></li>
+<li>Limpiar….</li>
+<li>Separar base: <code>train_test_split()</code></li>
+<li>Estimar modelo: model = <code>modelo().fit(x_train, y_train)</code></li>
+<li>Predecir: y_pred_test = <code>model.predict(X_test)</code></li>
+<li>Scores: <code>model.score(X_train, y_test) | mse(y_test, y_pred_test)</code></li>
+</ul>
+</div>
+</section>
+<section id="consideraciones-al-pasar-a-colab" class="slide level2">
+<h2>Consideraciones al pasar a Colab</h2>
+<div class="columns" style="font-size:20px">
+<ul>
+<li>Recuerden subir su archivo cada vez que inician sesión o tenerlo en Google Drive.</li>
+<li>Borrar os.chdir() porque <strong>no es su computadora</strong>.</li>
+<li>Colocar <strong><code>!pip install paquete</code></strong> si les genera error por falta de paquete.</li>
+<li>Listo!</li>
+</ul>
+</div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p><a href="https://j-isaula.github.io/website_ji/">https://j-isaula.github.io/website_ji/</a></p>
