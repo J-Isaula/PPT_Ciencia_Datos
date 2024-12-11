@@ -361,7 +361,7 @@ Procesador Core i5
 
 -   Busca explicar.
 
--   Usa muchas variables parz explorar.
+-   Usa muchas variables para explorar.
 
 -   Necesariamente explicable.
 
@@ -521,4 +521,32 @@ tener una idea de investigación es el primer paso:
 -   Borrar os.chdir() porque **no es su computadora**.
 -   Colocar **`!pip install paquete`** si les genera error por falta de paquete.
 -   Listo!
+:::
+
+# Reglas de Decisión
+
+## Minería de Datos
+
+::: {.columns style="font-size:20px"}
+-   Las reglas son especialmente útiles en minería de datos, porqué te indicarán un camino o explicaciones del por qué de los outputs, dados tus inputs.
+
+-   Recordar que no necesariamente coincidirá con lo esperado.
+
+-   Lo anterior, este bien o mal, si funciona, sería buena idea usarlo de todas formas.
+
+## Reglas de asociación
+
+-   Responde a las preguntas: que tan frecuente es $Y$, dado alguna combinación de $X$. Por ejemplo, si el cliente compra pan, es posible que compre leche.
+
+-   Se basa en if-then, donde `if es el antecedente` y `then es el consecuente`.
+
+-   Usos comunes: tendencias en compras, detección de fraudes, sistemas de recomendación.
+
+-   Algoritmos exclusivos: a priori, FP-growth, ECLAT.
+
+-   Algoritmos compartidos con ML: redes neuronales, árboles de decisión.
+
+<https://www.datacamp.com/tutorial/association-rule-mining-python>
+
+<https://stackabuse.com/association-rule-mining-via-apriori-algorithm-in-python/>
 :::
